@@ -1,12 +1,6 @@
 git filter-repo is a versatile tool for rewriting history, which includes
 [capabilities I have not found anywhere
-else](#design-rationale-behind-filter-repo).  It roughly falls into the
-same space of tool as [git
-filter-branch](https://git-scm.com/docs/git-filter-branch) but without the
-capitulation-inducing poor
-[performance](https://public-inbox.org/git/CABPp-BGOz8nks0+Tdw5GyGqxeYR-3FF6FT5JcgVqZDYVRQ6qog@mail.gmail.com/),
-with far more capabilities, and with a design that scales usability-wise
-beyond trivial rewriting cases.  [git filter-repo is now recommended by the
+else](#design-rationale-behind-filter-repo).  It roughly falls into  filter-repo is now recommended by the
 git project](https://git-scm.com/docs/git-filter-branch#_warning) instead
 of git filter-branch.
 
@@ -536,22 +530,4 @@ filter-repo needs to do its work:
     * [fast-export: Do parent rewriting to avoid dropping relevant commits](
       https://git.kernel.org/pub/scm/git/git.git/commit/?id=32164131db)
     * [fast-export: Add a --tag-of-filtered-object option for newly
-      dangling tags](
-      https://git.kernel.org/pub/scm/git/git.git/commit/?id=2d8ad46919)
-    * [Add new fast-export testcases](
-      https://git.kernel.org/pub/scm/git/git.git/commit/?id=25e0ca5dd6)
-    * [fast-export: Document the fact that git-rev-list arguments are
-      accepted](
-      https://git.kernel.org/pub/scm/git/git.git/commit/?id=8af15d282e)
-  * git-1.6.3:
-    * [git-filter-branch: avoid collisions with variables in eval'ed
-      commands](
-      https://git.kernel.org/pub/scm/git/git.git/commit/?id=d5b0c97d13)
-    * [Correct missing SP characters in grammar comment at top of
-      fast-import.c](
-      https://git.kernel.org/pub/scm/git/git.git/commit/?id=98e1a4186a)
-    * [fast-export: Avoid dropping files from commits](
-      https://git.kernel.org/pub/scm/git/git.git/commit/?id=ebeec7dbc5)
-  * git-1.6.1.4:
-    * [fast-export: ensure we traverse commits in topological order](
-      https://git.kernel.org/pub/scm/git/git.git/commit/?id=784f8affe4)
+      
